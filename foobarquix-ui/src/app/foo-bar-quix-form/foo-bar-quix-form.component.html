@@ -1,0 +1,11 @@
+<div class="container">
+    <form [formGroup]="formGroup" (ngSubmit)="submitNumber()" class="form">
+        <div class="form-group">
+            <label for="exampleCheck1">Number to convert</label>
+            <input id="inputNumber" type="number" class="form-control" placeholder="inputNumber" formControlName="inputNumber">
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="!formGroup.valid">
+            <span>Convert</span>
+        </button>
+    </form>
+</div>

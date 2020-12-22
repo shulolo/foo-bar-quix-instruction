@@ -1,0 +1,9 @@
+<div>
+    <div class="container">
+        <h2>Already converted values : </h2>
+        <div *ngFor="let result of results" class="well">
+            {{result.numberToConvert}} and the result is {{result.result}}
+        </div>
+    </div>
+    <app-foo-bar-quix-form (submitNumberOutput)="convertNumber($event)"></app-foo-bar-quix-form>
+</div>
